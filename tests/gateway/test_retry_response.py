@@ -1,4 +1,3 @@
-teyrebaz@DESKTOP-PE0HBBT:~/hermes-agent$ cat tests/gateway/test_retry_response.py
 """Regression test: /retry must return the agent response, not None.
 
 Before the fix in PR #441, _handle_retry_command() called
@@ -59,4 +58,3 @@ async def test_retry_no_previous_message(gateway):
     )
     result = await gateway._handle_retry_command(event)
     assert result == "No previous message to retry."
-teyrebaz@DESKTOP-PE0HBBT:~/hermes-agent$
